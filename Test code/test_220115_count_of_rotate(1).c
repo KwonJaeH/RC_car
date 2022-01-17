@@ -187,10 +187,10 @@ long detect_distance(int trig, int echo){
 
 void little_left(int val){
   //좌회전
-    digitalWrite(Dir1Pin_R, LOW);         // 오른쪽 바퀴들 앞으로
+    digitalWrite(Dir1Pin_R, LOW);        
     digitalWrite(Dir2Pin_R, HIGH);
     analogWrite(SpeedPin_R, 50);
-    digitalWrite(Dir6Pin_L, HIGH);         // 왼쪽 바퀴들 뒤로         
+    digitalWrite(Dir6Pin_L, HIGH);                  
     digitalWrite(Dir7Pin_L, LOW);
     analogWrite(SpeedPin_L, 250);
     Serial.println("좌회전");  
@@ -211,10 +211,10 @@ void little_left(int val){
 void little_right(int val){
   //우회전
   // base : 800 , 100
-     digitalWrite(Dir1Pin_R, LOW);         // 오른쪽 바퀴들 앞으로
+     digitalWrite(Dir1Pin_R, LOW);         
     digitalWrite(Dir2Pin_R, HIGH);
     analogWrite(SpeedPin_R, 250);
-    digitalWrite(Dir6Pin_L, HIGH);         // 왼쪽 바퀴들 뒤로         
+    digitalWrite(Dir6Pin_L, HIGH);                 
     digitalWrite(Dir7Pin_L, LOW);
     analogWrite(SpeedPin_L, 50);
    
@@ -456,7 +456,7 @@ void loop(){
   Serial.println(" Cm\n");
 */
 
-  // 10 초 됐을 때 원래 자리로 복귀
+  // 12 초 됐을 때 원래 자리로 복귀
   // 고려해야할게 많으나 현재는 단순히 원래 자리 위치로만 복귀 가정
 
  
